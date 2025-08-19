@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChunShyns - Login & Register</title>
+    <title>ChunShyns - Đăng Nhập & Đăng Ký</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./Assets/css/layout.css">
@@ -30,8 +30,8 @@
                 <!-- Login Panel -->
                 <div class="form-panel">
                     <div class="form-section">
-                        <h2><i class="fas fa-sign-in-alt me-3"></i>Welcome back!</h2>
-                        <p>Login to connect ideas with talents</p>
+                        <h2><i class="fas fa-sign-in-alt me-3"></i>Chào mừng trở lại!</h2>
+                        <p>Đăng nhập để kết nối ý tưởng với tài năng</p>
                         
                         <form id="loginForm" onsubmit="handleLogin(event)">
                             <div class="form-floating">
@@ -40,28 +40,28 @@
                             </div>
                             
                             <div class="form-floating">
-                                <input type="password" class="form-control" id="loginPassword" placeholder="Password" required>
-                                <label for="loginPassword"><i class="fas fa-lock me-2"></i>Password</label>
+                                <input type="password" class="form-control" id="loginPassword" placeholder="Mật khẩu" required>
+                                <label for="loginPassword"><i class="fas fa-lock me-2"></i>Mật khẩu</label>
                             </div>
                             
                             <div class="d-flex justify-content-between align-items-center mb-3">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" id="rememberMe">
                                     <label class="form-check-label" for="rememberMe">
-                                        Remember me
+                                        Ghi nhớ đăng nhập
                                     </label>
                                 </div>
-                                <a href="#" class="text-decoration-none" style="color: #667eea;">Forgot password?</a>
+                                <a href="#" class="text-decoration-none" style="color: #667eea;">Quên mật khẩu?</a>
                             </div>
                             
                             <button type="submit" class="btn btn-primary-custom">
-                                Login
+                                Đăng nhập
                                 <div class="loading" id="loginLoading"></div>
                             </button>
                         </form>
                         
                         <div class="social-divider">
-                            <span>Or login with</span>
+                            <span>Hoặc đăng nhập với</span>
                         </div>
                         
                         <div class="social-buttons">
@@ -76,10 +76,10 @@
                     
                     <div class="toggle-section">
                         <div class="toggle-content">
-                            <h3>Don't have an account?</h3>
-                            <p>Join ChunShyns to discover opportunities to connect ideas with amazing talents</p>
+                            <h3>Chưa có tài khoản?</h3>
+                            <p>Tham gia ChunShyns để khám phá cơ hội kết nối ý tưởng với tài năng tuyệt vời</p>
                             <button class="btn-toggle" onclick="switchToRegister()">
-                                Register now
+                                Đăng ký ngay
                             </button>
                         </div>
                     </div>
@@ -89,30 +89,30 @@
                 <div class="form-panel">
                     <div class="toggle-section">
                         <div class="toggle-content">
-                            <h3>Already have an account?</h3>
-                            <p>Login to continue your journey of connecting ideas with your talents</p>
+                            <h3>Đã có tài khoản?</h3>
+                            <p>Đăng nhập để tiếp tục hành trình kết nối ý tưởng với tài năng của bạn</p>
                             <button class="btn-toggle" onclick="switchToLogin()">
-                                Login
+                                Đăng nhập
                             </button>
                         </div>
                     </div>
                     
                     <div class="form-section">
-                        <h2><i class="fas fa-user-plus me-3"></i>Create a new account</h2>
-                        <p>Join the community to connect ideas with talents</p>
+                        <h2><i class="fas fa-user-plus me-3"></i>Tạo tài khoản mới</h2>
+                        <p>Tham gia cộng đồng kết nối ý tưởng với tài năng</p>
                         
                         <form id="registerForm" onsubmit="handleRegister(event)">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
-                                        <label for="firstName"><i class="fas fa-user me-2"></i>First Name</label>
+                                        <input type="text" class="form-control" id="firstName" placeholder="Tên" required>
+                                        <label for="firstName"><i class="fas fa-user me-2"></i>Tên</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
-                                        <label for="lastName"><i class="fas fa-user me-2"></i>Last Name</label>
+                                        <input type="text" class="form-control" id="lastName" placeholder="Họ" required>
+                                        <label for="lastName"><i class="fas fa-user me-2"></i>Họ</label>
                                     </div>
                                 </div>
                             </div>
@@ -123,33 +123,33 @@
                             </div>
                             
                             <div class="form-floating">
-                                <input type="password" class="form-control" id="registerPassword" placeholder="Password" required onkeyup="checkPasswordStrength()">
-                                <label for="registerPassword"><i class="fas fa-lock me-2"></i>Password</label>
+                                <input type="password" class="form-control" id="registerPassword" placeholder="Mật khẩu" required onkeyup="checkPasswordStrength()">
+                                <label for="registerPassword"><i class="fas fa-lock me-2"></i>Mật khẩu</label>
                                 <div class="password-strength">
                                     <div class="password-strength-bar" id="passwordStrengthBar"></div>
                                 </div>
                             </div>
                             
                             <div class="form-floating">
-                                <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password" required>
-                                <label for="confirmPassword"><i class="fas fa-lock me-2"></i>Confirm Password</label>
+                                <input type="password" class="form-control" id="confirmPassword" placeholder="Xác nhận mật khẩu" required>
+                                <label for="confirmPassword"><i class="fas fa-lock me-2"></i>Xác nhận mật khẩu</label>
                             </div>
                             
                             <div class="form-check mb-3">
                                 <input class="form-check-input" type="checkbox" id="agreeTerms" required>
                                 <label class="form-check-label" for="agreeTerms">
-                                    I agree to the <a href="#" style="color: #667eea;">Terms of Use</a> and <a href="#" style="color: #667eea;">Privacy Policy</a>
+                                    Tôi đồng ý với <a href="#" style="color: #667eea;">Điều khoản sử dụng</a> và <a href="#" style="color: #667eea;">Chính sách bảo mật</a>
                                 </label>
                             </div>
                             
                             <button type="submit" class="btn btn-secondary-custom">
-                                Create account
+                                Tạo tài khoản
                                 <div class="loading" id="registerLoading"></div>
                             </button>
                         </form>
                         
                         <div class="social-divider">
-                            <span>Or register with</span>
+                            <span>Hoặc đăng ký với</span>
                         </div>
                         
                         <div class="social-buttons">
