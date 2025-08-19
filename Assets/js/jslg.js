@@ -65,11 +65,11 @@ function handleLogin(event) {
   setTimeout(() => {
     loading.style.display = "none";
     btn.disabled = false;
-    showSuccess("Đăng nhập thành công!", "login");
+    showSuccess("Login successful!", "login");
 
     // Redirect simulation
     setTimeout(() => {
-      alert("Chuyển hướng đến trang chủ...");
+      alert("Redirecting to homepage...");
     }, 1500);
   }, 2000);
 }
@@ -80,7 +80,7 @@ function handleRegister(event) {
   const confirmPassword = document.getElementById("confirmPassword").value;
 
   if (password !== confirmPassword) {
-    showError("Mật khẩu xác nhận không khớp!", "register");
+    showError("Password confirmation does not match!", "register");
     return;
   }
 
@@ -95,7 +95,7 @@ function handleRegister(event) {
     loading.style.display = "none";
     btn.disabled = false;
     showSuccess(
-      "Đăng ký thành công! Vui lòng kiểm tra email để xác thực tài khoản.",
+      "Registration successful! Please check your email to verify your account.",
       "register"
     );
 
@@ -139,7 +139,7 @@ function clearPasswordStrength() {
 
 // Social Login
 function socialLogin(provider) {
-  showInfo(`Đang chuyển hướng đến ${provider}...`);
+  showInfo(`Redirecting to ${provider}...`);
   // Implement social login logic here
 }
 
@@ -196,7 +196,7 @@ function showMessage(message, type, formType) {
 }
 
 function goHome() {
-  alert("Chuyển về trang chủ ChunShyns...");
+  alert("Go back to ChunShyns homepage...");
 }
 
 // Handle browser back/forward buttons
